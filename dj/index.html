@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ-By-Sadun</title>
+    <link rel="stylesheet" href="dj.css/sadun.css">
+</head>
+<body id="body">
+
+    
+   <!-- Kaliteli Kod Yayıncısı & Kaynak : https://webkodu.ozgurlukicin.com -->
+<!-- webkodu.ozgurlukicin.com / Artık Herşey Tek Çatı Altında : https://webkodu.ozgurlukicin.com -->
+<h2><script language="JavaScript1.2">
+
+    var message="𝔻𝕛 𝔹𝕪 𝕊𝕒𝕕𝕦𝕟"
+    var neonbasecolor="black"
+    var neontextcolor="yellow"
+    var neontextcolor2="#fff"
+    var flashspeed=25						
+    var flashingletters=3						
+    var flashingletters2=1						
+    var flashpause=0						
+    
+    
+    
+    var n=0
+    if (document.all||document.getElementById){
+    document.write('<font color="'+neonbasecolor+'">')
+    for (m=0;m<message.length;m++)
+    document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+    document.write('</font>')
+    }
+    else
+    document.write(message)
+    
+    function crossref(number){
+    var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+    return crossobj
+    }
+    
+    function neon(){
+    
+    
+    if (n==0){
+    for (m=0;m<message.length;m++)
+    crossref(m).style.color=neonbasecolor
+    }
+    
+    
+    crossref(n).style.color=neontextcolor
+    
+    if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
+    if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+    
+    
+    if (n<message.length-1)
+    n++
+    else{
+    n=0
+    clearInterval(flashing)
+    setTimeout("beginneon()",flashpause)
+    return
+    }
+    }
+    
+    function beginneon(){
+    if (document.all||document.getElementById)
+    flashing=setInterval("neon()",flashspeed)
+    }
+    beginneon()
+    
+    
+    </script></h2>
+    <!-- Kaliteli Kod Yayıncısı & Kaynak : https://webkodu.ozgurlukicin.com -->
+    <!-- webkodu.ozgurlukicin.com / Artık Herşey Tek Çatı Altında : https://webkodu.ozgurlukicin.com -->
+    
+    
+
+        <strong><h1>DJ Sadun - DJ Müzisyen</h1></strong>
+        <img id="img" width="200" src="https://upload.wikimedia.org/wikipedia/commons/1/17/Spooky.jpg" alt="dj">
+        <strong><h3>Hakkımızda</h3></strong>
+
+             <p>DJ, ya da tam adıyla <strong><span style="color:red">Disk Jockey</span></strong>  Müzik ve disko akışını kontrol eden, <br> 
+        parça seçiminde ve parçalar arası geçişlerde uyum sağlamakla görevli kişi.
+        DJ'ler <strong>Gece kulübü, Dans Kulübü, Festival, Bar, Disko vb.</strong>yerlerde çalışır. <br> 
+        DJ, parçayı mixleyerek sunar. Kalabalığın akışına göre müziğin tonunu kullanarak, parçadaki davul dizilimini takip ederek müzikler arasında geçişler yapar. <br> 
+        Bazıları 10-15 dakikalık setler halinde bazıları ise parçanın Extended Mixlerini dinletirler. <br> 
+        Parça arasında geçiş yapmak ve istikrarı sağlamak için parçanın temposunu yani <strong><span style="color: red;">BPM</span></strong> değerinin eşit olması gerekmektedir. <br> 
+        Günümüzde çoğu DJ aynı zamanda Müzik Produksiyonu yapmaktadır.</p>
+
+        
+            <li><a href="iletisim.html" target="_blank">
+                İletişim..
+            </a></li>
+        
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rtqc8r8CGFs?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+    
+</body>
+</html>

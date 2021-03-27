@@ -1,0 +1,37 @@
+.fs-14 {
+    font-size: 20px;
+}
+
+.text-red {
+    color: coral;
+}
+
+#body {
+    width: auto;
+ border: 0em;
+ text-align: center;
+ padding-top: 5em;
+ padding-bottom: 0em;
+
+}
+
+img {
+    display: block;
+    margin: auto;
+    border: 2px solid black;   
+}
+
+p {
+    font-size: 20px;
+    color: black;
+}
+
+h3 {
+    font-size: 40px;
+    color: blue;
+}
+
+li {
+    font-size: 25px;
+    
+}
